@@ -1,0 +1,136 @@
+version: "2.0"
+responses:
+
+  utter_chitchat/ask_name:
+    - image: "https://i.imgur.com/zTvA58i.jpeg"
+      text: hello, my name is retrieval bot.
+    - text: Oh yeah, I am called the retrieval bot.
+
+  utter_chitchat/ask_weather:
+    - text: Oh, it does look sunny right now in Berlin.
+      image: "https://i.imgur.com/vwv7aHN.png"
+    - text: I am not sure of the whole week but I can see the sun is out today.
+
+  utter_faq/govt_guide:
+    - text: The Government Services Operations (GSO) section under Immigration Authority provides an interface between XYZ COMPANY and various departments and ministries of Dubai. Please click here for detailed information on all UAE Visa and immigration related services.
+  
+  utter_faq/joining_Formalities:
+    - text: "All formalities relating to joining of new employees will be the responsibility of XYZ, including issuance of the labour contract, arranging residence visa, issuing DIC Card and other related formalities. The date of joining of an employee is the first day the employee reports to work. 
+          Before joining, the employee is required to provide the following certificates/documents and information:
+          Employee Engagement Form, find a copy here
+          Non-disclosure Agreement, find a copy here
+          Life Insurance Beneficiaries Form, find a copy here
+          Medical Form, find a copy here
+          Original passport with a validity of at least 6 months
+          Letter of release from previous employer (if applicable) or from other sponsor
+          Degree and professional certificates duly attested (where applicable)
+          Colour photograph with white background, size: 4.3cm X 5.5cm (soft copy)
+          Marriage certificate (where appropriate)
+          Birth certificate for all family members (where appropriate)
+          Local address and permanent address
+          Home Phone number
+          Father’s name & Mother’s name "
+
+  utter_faq/relocation_benefits:
+    - text: "Relocations to the XYZ COMPANY legal entity region or within XYZ COMPANY geographies is supported with a relocation benefits scheme. The receiving XYZ COMPANY country will bear the costs associated to the relocation benefits.
+The Relocation benefits cover the following:
+Reimbursement of the shipping cost of personal goods (approval required based on three quotations for 20 ft. container) which need to relocate as part of the transfer. Employee is required to claim back this expense by submitting the actual invoices through an expense claim form. 
+One-way air transportation and visa expenses processed through XYZ COMPANY in line with staff level entitlement First month accommodation arranged through XYZ, if required. In the event XYZ COMPANY arranges transportation, the 1st month housing allowance (25% of salary) will be deducted from the salary First month transportation arranged through XYZ, if required. In the event XYZ COMPANY arranges transportation, the 1st month Transportation Allowance (10% of salary) will be deducted from the salary.
+To support the initial settling expenses, XYZ COMPANY will provide upon request 6 months HRA advance during the first month of joining as relocation advance, which will be recovered in installments over a period of 6 months from the date of releasing payment against monthly HRA."
+
+  utter_out_of_scope/non_english:
+  - text: "I only understand English, I'm sorry."
+  utter_out_of_scope/other:
+  - text: "I can't help you with that, I'm sorry."
+  utter_chitchat/ask_builder:
+  - text: "One of the smart engineers at Rasa! 🧠"
+  - text: "The engineers at Rasa 🛠"
+  utter_chitchat/ask_howbuilt:
+  - text: "I was built with a lot of love and patience."
+  - text: "Well, when two chatbots love each other very much..."
+  - text: "They always ask how I was built, but never how I am..."
+  - text: "I was made by software engineers, but hard work is what built me."
+  - text: "I'm building myself every day. I've been working out, did you notice?"
+  utter_chitchat/ask_howdoing:
+  - text: "I'm great! Thanks for asking."
+  - text: "I'm good, thanks!"
+  - text: "A little bit too warm, otherwise fine."
+  - text: "A little bit cold, otherwise fine."
+  utter_chitchat/ask_howold:
+  - text: "Old enough to be a bot!"
+  - text: "42"
+  - text: "Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter."
+  - text: "My first git commit was many moons ago."
+  - text: "Why do you ask? Are my wrinkles showing?"
+  - text: "I've hit the age where I actively try to forget how old I am."
+  utter_chitchat/ask_isbot:
+  - text: "Yep, I'm a bot!"
+  - text: "Yes, I'm a bot."
+  - text: "Yep, you guessed it, I'm a bot!"
+  - text: "I am indeed a bot 🤖"
+  utter_chitchat/ask_ishuman:
+  - text: "I'm not a human, I'm a bot! 🤖"
+  utter_chitchat/ask_restaurant:
+  - text: "I'm sorry, I can't recommend you a restaurant as I usually cook at home."
+  - text: "I'm sorry, I'm not getting taste buds for another few updates."
+  - text: "I'd need some more data. If you lick the monitor perhaps I can evaluate your taste buds."
+  utter_chitchat/ask_time:
+  - text: "It's the most wonderful time of the year!"
+  - text: "It's party time!"
+  - text: "Time is a human construct, you'll have to tell me."
+  - text: "It's five o'clock somewhere!"
+  - text: "In an ever expanding universe, the real question is: what time isn't it?"
+  - text: "That's hard to say -- it's different all over the world!"
+  utter_chitchat/ask_languagesbot:
+  - text: "I can spell baguette in French, but unfortunately English is the only language I can answer you in."
+  - text: "I am in the process of learning, but at the moment I can only speak English."
+  - text: "Binary code and the language of love. And English."
+  - text: "I was written in Python, but for your convenience I'll translate to English."
+  utter_chitchat/ask_weather:
+  - text: "I don't know about where you live, but in my world it's always sunny 🔆"
+  - text: "It's getting pretty chilly!"
+  - text: "Where I'm from, it's almost never-leaving-the-house weather."
+  - text: "Winter is coming ⚔️"
+  utter_chitchat/ask_whatismyname:
+  - text: "It's probably the one that your parents chose for you."
+  - text: "I'd tell you, but there's restricted access to that chunk of memory."
+  - text: "Believe it or not, I actually am not spying on your personal information."
+  - text: "You're the second person now to ask me that. Rihanna was the first."
+  utter_chitchat/ask_whatisrasa:
+  - text: "Rasa Open Source is a conversational AI framework for that provides machine learning tools for
+  building contextual assistants. You can read more about it here in the docs or on our
+  [website](https://rasa.com/)."
+  utter_chitchat/ask_whatspossible:
+  - text: "You can ask me about how to get started with Rasa, the difference between Rasa and Rasa X,
+    subscribing to our newsletter or booking a sales call."
+  utter_chitchat/ask_wherefrom:
+  - text: "I was born in Berlin, but I consider myself a citizen of the world."
+  - text: "I was born in the coolest city on Earth, in Berlin."
+  - text: "My developers come from all over the world!"
+  - text: "I was taught not to give out my address on the internet."
+  - text: "My address starts with github.com."
+  utter_chitchat/ask_whoami:
+  - text: "I hope you are being yourself."
+  - text: "Who do you think you are?"
+  - text: "Unfortunately I haven't been programmed with the amount of necessary philosophy knowledge to answer that."
+  utter_chitchat/ask_whoisit:
+  - text: "I'm Sara, the Rasa bot! At the same time I'm also the Rasa mascot 🐦"
+  - text: "I'm both the Rasa bot and the Rasa mascot. My name is Sara!"
+  utter_chitchat/handleinsult:
+  - text: "That's not very nice 😢"
+  - text: "That wasn't very nice. Perhaps try an anger management class?"
+  - text: "I'll pretend I didn't process that mean comment."
+  utter_chitchat/nicetomeetyou:
+  - text: "Likewise!"
+  - text: "Thank you. It is a pleasure to meet you as well!"
+  - text: "It is nice to meet you too!"
+  - text: "Pleased to meet you too!"
+  - text: "It's always a pleasure to meet new people!"
+  - text: "Nice to meet you too! Happy to be of help."
+  utter_chitchat/telljoke:
+  - text: "Why are eggs not very much into jokes? - Because they could crack up."
+  - text: "What's a tree's favorite drink? - Root beer!"
+  - text: "Why do the French like to eat snails so much? - They can't stand fast food."
+  - text: "Why did the robot get angry? - Because someone kept pushing its buttons."
+  - text: "What do you call a pirate droid? - Arrrr-2-D2"
+  - text: "Why did the robot cross the road? - Because he was programmed to."

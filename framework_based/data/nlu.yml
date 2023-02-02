@@ -1,0 +1,157 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: faq/govt_guide
+  examples: |
+    - what's Government Guidelines
+    - Government Guidelines
+    - What is Government Guidelines
+    - What is Govt Guidelines
+    - what is govt guide
+    - May I know about Government Guidelines
+    - bot tell me about Government Guidelines
+
+- intent: faq/joining_Formalities
+  examples: |
+    - Joining Formalities
+    - what is Joining Formalities
+    - what do I need for joining
+
+- intent: faq/relocation_benefits
+  examples: |
+    - Relocation Benefits
+    - relocation benefits
+    - what benefits I will If I relocate
+    - relocate benefits
+    - benefits of relocation
+
+responses:
+  utter_chitchat/ask_name:
+    - image: "https://i.imgur.com/zTvA58i.jpeg"
+      text: hello, my name is retrieval bot.
+    - text: Oh yeah, I am called the retrieval bot.
+
+  utter_chitchat/ask_weather:
+    - text: Oh, it does look sunny right now in Berlin.
+      image: "https://i.imgur.com/vwv7aHN.png"
+    - text: I am not sure of the whole week but I can see the sun is out today.
+
+  utter_faq/govt_guide:
+    - text: The Government Services Operations (GSO) section under Immigration Authority provides an interface between XYZ COMPANY and various departments and ministries of Dubai. Please click here for detailed information on all UAE Visa and immigration related services.
+  
+  utter_faq/joining_Formalities:
+    - text: "All formalities relating to joining of new employees will be the responsibility of XYZ, including issuance of the labour contract, arranging residence visa, issuing DIC Card and other related formalities. The date of joining of an employee is the first day the employee reports to work. 
+          Before joining, the employee is required to provide the following certificates/documents and information:
+          Employee Engagement Form, find a copy here
+          Non-disclosure Agreement, find a copy here
+          Life Insurance Beneficiaries Form, find a copy here
+          Medical Form, find a copy here
+          Original passport with a validity of at least 6 months
+          Letter of release from previous employer (if applicable) or from other sponsor
+          Degree and professional certificates duly attested (where applicable)
+          Colour photograph with white background, size: 4.3cm X 5.5cm (soft copy)
+          Marriage certificate (where appropriate)
+          Birth certificate for all family members (where appropriate)
+          Local address and permanent address
+          Home Phone number
+          Father’s name & Mother’s name "
+
+  utter_faq/relocation_benefits:
+    - text: "Relocations to the XYZ COMPANY legal entity region or within XYZ COMPANY geographies is supported with a relocation benefits scheme. The receiving XYZ COMPANY country will bear the costs associated to the relocation benefits.
+The Relocation benefits cover the following:
+Reimbursement of the shipping cost of personal goods (approval required based on three quotations for 20 ft. container) which need to relocate as part of the transfer. Employee is required to claim back this expense by submitting the actual invoices through an expense claim form. 
+One-way air transportation and visa expenses processed through XYZ COMPANY in line with staff level entitlement First month accommodation arranged through XYZ, if required. In the event XYZ COMPANY arranges transportation, the 1st month housing allowance (25% of salary) will be deducted from the salary First month transportation arranged through XYZ, if required. In the event XYZ COMPANY arranges transportation, the 1st month Transportation Allowance (10% of salary) will be deducted from the salary.
+To support the initial settling expenses, XYZ COMPANY will provide upon request 6 months HRA advance during the first month of joining as relocation advance, which will be recovered in installments over a period of 6 months from the date of releasing payment against monthly HRA."
+  utter_out_of_scope/non_english:
+    - text: "I only understand English, I'm sorry."
+  utter_out_of_scope/other:
+    - text: "I can't help you with that, I'm sorry."

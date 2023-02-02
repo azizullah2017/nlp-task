@@ -1,0 +1,10 @@
+Name: tensorflow
+Version: 2.8.4
+
+Name: numpy
+Version: 1.22.4
+
+Name: keras
+Version: 2.8.0
+
+!pip install wget tensorflow==1.5 pandas numpy keras
